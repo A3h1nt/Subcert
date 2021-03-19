@@ -16,11 +16,11 @@ Subcert is an subdomain enumeration tool, that finds all the subdomains from cer
 ```
 apt-get install python3-pip
 ```
-### Step 2: Clone the repisotory
+### Step 2: Clone the Repository
 ```
 git clone <url>
 ```
-### Step 3: Install dependencies
+### Step 3: Install Dependencies
 ```
 pip3 install -r requirements.txt
 ```
