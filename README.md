@@ -3,7 +3,7 @@
 </p>
 
 # Subcert
-Subcert is an subdomain enumeration tool, that finds all the valid subdomains from certificate transparency logs. 
+Subcert is a subdomain enumeration tool, that finds all the valid subdomains from certificate transparency logs. 
 
 ## Table of contents
 * [Setup](#Setup)
