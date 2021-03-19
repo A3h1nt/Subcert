@@ -1,4 +1,4 @@
-port requests
+import requests
 import eventlet
 import json
 import secrets
