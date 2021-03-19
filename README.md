@@ -12,6 +12,23 @@ Subcert is an subdomain enumeration tool, that finds all the subdomains from cer
 * [Contact Me](#Contact-me)
 
 ## Setup
+### Step 1: Install Python 3
 ```
 apt-get install python3-pip
+```
+### Step 2: Clone the repisotory
+```
+git clone <url>
+```
+### Step 3: Install dependencies
+```
+pip3 install -r requirements.txt
+```
+### Step 4: Move the Directory to /opt 
+```
+mv subcert /opt/
+```
+### Step 5: Add an alias in .bashrc to run the script from anywhere
+```
+alias subcert="python3 /opt/subcert/subcert.py"
 ```
