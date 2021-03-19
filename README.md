@@ -42,4 +42,4 @@ alias subcert="python3 /opt/subcert/subcert.py"
 
 ## Contact Me
 
-You can contact me regarding anything at A3h1nt [https://twitter.com/A3h1nt]
+You can contact me regarding anything at [A3h1nt](https://twitter.com/A3h1nt)
