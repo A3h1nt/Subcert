@@ -1,5 +1,4 @@
-
-import requests
+port requests
 import eventlet
 import json
 import secrets
@@ -48,6 +47,12 @@ headers['User-Agent']=secrets.choice(user_agents)
 resp = requests.get(url,headers=headers)
 resp=resp.text
 site_json=json.loads(resp)
+
+
+
+if len(site_json) < 2:
+  print("\n["+Fore.RED+"*"+Fore.WHITE+"] " +"No Results Found \n")
+  sys.exit(0)
 
 #some empty lists to work with
 first_list=[]
