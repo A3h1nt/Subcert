@@ -18,7 +18,7 @@ apt-get install python3-pip
 ```
 ### Step 2: Clone the Repository
 ```
-git clone <url>
+git clone https://github.com/A3h1nt/Subcert.git
 ```
 ### Step 3: Install Dependencies
 ```
