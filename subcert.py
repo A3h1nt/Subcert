@@ -93,6 +93,7 @@ for i in temp3_list:
   if i not in final_list:
     final_list.append(i)
 
+ip=''
 #Printing out stuff
 with eventlet.Timeout(10):
   for i in final_list:
@@ -102,10 +103,8 @@ with eventlet.Timeout(10):
         if not ip:
           continue
         else:
-          print(" ["+Fore.GREEN+"*"+Fore.WHITE+"] " +str(ip)+ "   -   www." + str(i))
-    except requests.exceptions.RequestException as error:
-          print(" ["+Fore.GREEN+"*"+Fore.WHITE+"] " +str(ip)+ "   -   www." + str(i))
-          continue
-    except socket.error as error:
-          print(" ["+Fore.GREEN+"*"+Fore.WHITE+"] " +str(ip)+ "   -   www." + str(i))
+          print(" ["+Fore.GREEN+"*"+Fore.WHITE+"] " +str(ip)+ "   -   " + str(i))
+    except:
+          ''' this print statement is optional, you can uncomment this to display the subdomains even if there's an exception '''
+          #print(" ["+Fore.GREEN+"*"+Fore.WHITE+"] " +str(ip)+ "   -   www." + str(i))
           continue
