@@ -10,3 +10,8 @@ Subcert is an subdomain enumeration tool, that finds all the subdomains from cer
 * [Demo](#Demo)
 * [Contribute](#contribute)
 * [Contact Me](#Contact-me)
+
+## Setup
+```
+apt-get install python3-pip
+```
