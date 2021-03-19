@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="600" height="300" src="/images/subcert.svg">
+  <img width="600" height="300" src="/Images/subcert.svg">
 </p>
 
 # Subcert
