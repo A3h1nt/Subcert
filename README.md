@@ -9,7 +9,7 @@ Subcert is an subdomain enumeration tool, that finds all the subdomains from cer
 * [Setup](#Setup)
 * [Demo](#Demo)
 * [Contribute](#contribute)
-* [Contact Me](#Contact-me)
+* [Contact Me](#Contact-Me)
 
 ## Setup
 ### Step 1: Install Python 3
@@ -34,3 +34,12 @@ alias subcert="python3 /opt/subcert/subcert.py"
 ```
 
 ## Demo
+
+## Contribute
+- Improve Code
+- Suggestions
+- Report Bugs
+
+## Contact Me
+
+You can contact me regarding anything at A3h1nt [https://twitter.com/A3h1nt]
