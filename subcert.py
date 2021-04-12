@@ -7,14 +7,20 @@ from colorama import Fore
 import re
 import pyfiglet
 import socket
+import argparse
 
 
-if len(sys.argv) != 2:
-        print("USAGE: subcert domain.com")
-        sys.exit(0)
+outputfile = ''
+domain_name = False
 
-domain_name=sys.argv[1]
+parser = argparse.ArgumentParser()
+parser.add_argument('-d','--domain', required=True, help="Domain to query", type=str)
+parser.add_argument('-o','--output', help="Output file name", type=str)
 
+args = parser.parse_args()
+
+domain_name = args.domain
+outputfile = args.output
 
 regex = "^((?!-)[A-Za-z0-9-]"+"{1,63}(?<!-)\\.)"+"+[A-Za-z]{2,6}"
 
@@ -23,7 +29,7 @@ p = re.compile(regex)
 
 if (re.search(p,domain_name)):
         print(Fore.BLUE+"=========================================================")
-        banner=pyfiglet.figlet_format("SUBCERT", font = "cyberlarge"  )
+        banner=pyfiglet.figlet_format("SUBCERT", font = "standard"  )
         print(Fore.WHITE+banner)
         print("                                            by: A3h1nt")
         print(Fore.BLUE+"========================================================="+Fore.WHITE)
@@ -94,6 +100,8 @@ for i in temp3_list:
     final_list.append(i)
 
 ip=''
+if outputfile:
+  f = open(outputfile, "a+" )
 #Printing out stuff
 with eventlet.Timeout(10):
   for i in final_list:
@@ -104,7 +112,11 @@ with eventlet.Timeout(10):
           continue
         else:
           print(" ["+Fore.GREEN+"*"+Fore.WHITE+"] " +str(ip)+ "   -   " + str(i))
+          if outputfile:
+            f.write(str(i) + "\n")
     except:
           ''' this print statement is optional, you can uncomment this to display the subdomains even if there's an exception '''
           #print(" ["+Fore.GREEN+"*"+Fore.WHITE+"] " +str(ip)+ "   -   www." + str(i))
           continue
+if outputfile:
+  f.close()
