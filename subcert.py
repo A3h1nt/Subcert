@@ -29,7 +29,7 @@ p = re.compile(regex)
 
 if (re.search(p,domain_name)):
         print(Fore.BLUE+"=========================================================")
-        banner=pyfiglet.figlet_format("SUBCERT", font = "cyberlarge"  )
+        banner=pyfiglet.figlet_format("SUBCERT", font = "slant"  )
         print(Fore.WHITE+banner)
         print("                                            by: A3h1nt")
         print(Fore.BLUE+"========================================================="+Fore.WHITE)
